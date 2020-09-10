@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import GradientsHeader from './components/GradientsHeader';
+import GradientsList from './components/GradientsList';
+import Footer from './components/Footer';
 
 function App() {
   return (
