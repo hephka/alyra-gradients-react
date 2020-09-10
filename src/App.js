@@ -1,29 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import GradientsHeader from './components/GradientsHeader';
-import GradientsList from './components/GradientsList';
 import Footer from './components/Footer';
+import GradientsList from './components/GradientsList';
+import gradients from "./gradients"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <header>
+      <GradientsHeader list={gradients} />
+    </header>
+    <main>
+      <GradientsList list={gradients}/>
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+    </>
+  )
 }
 
 export default App;

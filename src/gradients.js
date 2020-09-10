@@ -172,4 +172,3 @@ const gradients = [
   const uniqueTags = allTags(gradients);
 
   export default gradients
-  export default uniqueTags

@@ -1,1 +1,0 @@
-import Gradient from "./../Gradient"
