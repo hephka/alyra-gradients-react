@@ -1,8 +1,8 @@
 import React from 'react';
 import GradientsHeader from './components/GradientsHeader';
 import Footer from './components/Footer';
-import GradientsList from './components/GradientsList';
-import gradients from "./gradients"
+import Gradients from './components/Gradients';
+import {gradients} from "./gradients"
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <GradientsHeader list={gradients} />
     </header>
     <main>
-      <GradientsList list={gradients}/>
+      <Gradients />
     </main>
     <footer>
       <Footer />

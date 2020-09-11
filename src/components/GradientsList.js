@@ -1,11 +1,10 @@
 import React from 'react';
 import Gradient from './Gradient/Gradient'
 
-const GradientsList = (props) => {
-    const {list} = props
+const GradientsList = ({list}) => {
     return (
         <ul className="row list-unstyled">
-          {list.map( el => (
+          {list.map( (el) => (
           <Gradient 
             key={el.name} 
             name={el.name} 

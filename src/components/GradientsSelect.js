@@ -1,4 +1,5 @@
 import React from 'react';
+import { uniqueTags} from './../gradients'
 
 const GradientsSelect = (props) => {
     const { filter, setFilter } = props
@@ -7,18 +8,20 @@ const GradientsSelect = (props) => {
     }
     return (
         <div className="input-group mb-3">
-      <label className="input-group-text" htmlFor="select">
-        Filtrer par tag
-      </label>
-      <select className="form-select" id="select" value={filter} onChange={handleSelectChange}>
-          {/* eslint-disable-next-line */}
-        <option value="all">Tous 📜</option>
-        {/* eslint-disable-next-line */}
-        <option value="completed">Terminées 👍</option>
-        {/* eslint-disable-next-line */}
-        <option value="notcompleted">pas Terminées 🤷‍♂️</option>
-      </select>
-    </div>
+            <label className="input-group-text" htmlFor="inputGroupSelect01">Tags</label>
+            <select className="form-select" id="select" value={filter} onChange={handleSelectChange}>
+                <option value="all">Tous</option>
+                {uniqueTags.map((el) => {
+                    return (
+                        <option key={el}>
+                            {el}
+                        </option>
+                    )
+                })}
+            </select>
+        </div>
+
+
     )
 }
 

@@ -150,25 +150,23 @@ const gradients = [
       tags: ["vert", "jaune"]
     }
   ];
-  
+
   function allTags(list) {
-    /* retourner la liste des tags uniques */
     let listTotal = [];
     for (let element of list) {
-      if ("tags" in element) {
-        listTotal = listTotal.concat(element.tags);
-      }
+        if ("tags" in element) {
+            listTotal = listTotal.concat(element.tags);
+        }
     }
     const listTagsUnique = [];
     listTotal.forEach((el) => {
-      if (!listTagsUnique.includes(el)) {
-        //listTagsUnique = listTagsUnique.concat([el])
-        listTagsUnique.push(el);
-      }
+        if (!listTagsUnique.includes(el)) {
+            listTagsUnique.push(el);
+        }
     });
     return listTagsUnique;
-  }
-  
-  const uniqueTags = allTags(gradients);
+}
 
-  export default gradients
+const uniqueTags = allTags(gradients);
+
+  export {gradients, uniqueTags}

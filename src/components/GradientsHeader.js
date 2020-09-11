@@ -1,5 +1,5 @@
 import React from 'react';
-import gradients from './../gradients'
+import {gradients} from './../gradients'
 
 const Icon = () => {
     return (
