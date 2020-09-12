@@ -9,7 +9,8 @@ const GradientsList = ({list}) => {
             key={el.name} 
             name={el.name} 
             colorStart={el.start} 
-            colorEnd={el.end} 
+            colorEnd={el.end}
+            tags={el.tags}
           />
           ))}
         </ul>
