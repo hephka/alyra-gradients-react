@@ -8,7 +8,8 @@ const GradientTag = (props) => {
                 <button 
                     className="d-flex btn btn-sm btn-dark mt-2 mb-1 mr-1" 
                     type="button" 
-                    disabled={true} >
+                    disabled={true} 
+                    key={el} >
                     {el}
                 </button>
             ))}
